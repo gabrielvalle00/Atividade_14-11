@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="../javascript/app.js"></script>
+    <link rel="stylesheet" href="../css/telaPrincipal.css">
+    <title>Atividade do dia 14/11/23</title>
+</head>
+
+<body onload="inserir()">
+    <h2>INSERINDO E PROCESSANDO DADOS EM TABELA</h2>
+
+    <div id="container">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome">
+
+        <label for="data">Data de Nasc.</label>
+        <input type="date" id="dataNasc">
+
+        <select name="" id="funcao">
+            <option value="" disabled selected>Função</option>
+            <option value="Desenvolvedor de Sistemas">Desenvolvedor de Sistemas</option>
+            <option value="Eletricista">Eletricista</option>
+            <option value="Mecânico">Mecânico</option>
+            <option value="Gerente">Gerente</option>
+        </select>
+
+        <button id="btnInserir" onclick="inserir()">INSERIR</button>
+    </div>
+
+    <table id="tabela">
+        <thead>
+            <th>Nome</th>
+            <th>Nascimento</th>
+            <th>Função</th>
+            <th>Idade</th>
+        </thead>
+    </table>
+</body>
+
+</html>
+
